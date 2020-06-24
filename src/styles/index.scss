@@ -1,0 +1,96 @@
+@import "formInput";
+@import "variables";
+@import "./vux";
+
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Microsoft YaHei light", "微软雅黑", Arial, Tahoma, simhei, Helvetica, sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, th, td, p, form, button, input, textarea, fieldset, blockquote, img, iframe, pre, code, hr, legend {
+  padding: 0;
+  margin: 0;
+}
+
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+body {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+input, select, input, textarea, button {
+  font-size: toRem(30);
+  outline: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft YaHei light", "微软雅黑", Arial, Tahoma, simhei, Helvetica, sans-serif;
+}
+
+select, input {
+  vertical-align: middle;
+}
+
+input {
+  width: 100%;
+  height: toRem(80);
+  padding-left: toRem(55);
+  border: 1px solid #ccc;
+  color: $themeColor;
+  line-height: toRem(80);
+  &:focus {
+    border-color: $themeColor !important;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+address, cite, code, em, th, i, strong {
+  font-style: normal;
+  font-weight: normal;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+#app {
+  //font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.submit-btn {
+  border: 0;
+  color: #fff;
+  width: 100%;
+  height: toRem(80);
+  font-size: toRem(28);
+  border-radius: toRem(8);
+  background-color: $themeColor;
+}

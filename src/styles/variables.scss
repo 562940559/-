@@ -1,0 +1,6 @@
+$inputLineHeight: 10vw;
+$size: 100;
+$themeColor: #4b79fe;
+@function toRem($px) {
+  @return $px / $size * 1rem;
+}

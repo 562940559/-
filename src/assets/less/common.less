@@ -1,0 +1,123 @@
+@size: 75rem;
+@max: 10000%;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.font-size(@number) {
+  font-size: @number/@size;
+}
+
+.line-height(@number) {
+  line-height: @number/@size;
+}
+
+.width(@width: @max, @height: @max) {
+  height: @height/@size;
+  width: @width/@size;
+}
+
+.clearfix{
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  zoom:1;
+}
+
+.padding(@top: 0, @right: 0, @bottom: 0, @left: 0) {
+  padding-top: @top/@size;
+  padding-right: @right/@size;
+  padding-bottom: @bottom/@size;
+  padding-left: @left/@size;
+}
+
+.aroundPadding() {
+  .padding(30, 30, 30, 30);
+}
+
+.margin(@top: 0, @right: 0, @bottom: 0, @left: 0) {
+  margin-top: @top/@size;
+  margin-right: @right/@size;
+  margin-bottom: @bottom/@size;
+  margin-left: @left/@size;
+}
+
+.last-border-bottom() {
+  border-bottom: 1px solid #E5E5E5;
+  &:last-child {
+    border: none;
+  }
+}
+
+.last-border-top() {
+  border-top: 1px solid #E5E5E5;
+}
+
+.border-top() {
+  border-top: 1px solid #E5E5E5;
+}
+
+.border-bottom() {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.border() {
+  border: 1/@size solid #E5E5E5;
+}
+
+.backdrop {
+  position: absolute;
+  z-index: 997;
+  background-color: rgba(0, 0, 0, .3);
+  height: 100%;
+  width: 100%;
+}
+
+.ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.gradient(@to, @from) {
+  background: -webkit-linear-gradient(left, @to , @from);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, @to, @from);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, @to, @from);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, @to , @from);
+  /* 标准的语法 */
+}
+
+.commonButton {
+  .margin(80);
+  text-align: center;
+  button {
+    .padding(18, 250, 18, 250);
+    background: #5791F7;
+    border-radius: 0.08rem;
+    .font-size(32);
+    color: #FFFFFF;
+  }
+}
+
+.memberListTitle {
+  font-weight: 900;
+  padding-right: 0.4rem;
+  padding-left: 62/@size;
+  border-bottom: 1px solid #E8E9EF;
+  //background: url(../../assets/img/detection/ico_zhengxinbaogao_tiao.png) white no-repeat 30/@size 50% ;
+  background-size: 12/@size 30/@size;
+  p {
+    padding: 0.3rem 0;
+    font-size: 30/@size;
+    color: #333333;
+  }
+}

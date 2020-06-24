@@ -1,0 +1,58 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
+}
+
+@mixin placeholderColor($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin gradient($to, $from) {
+  background: -webkit-linear-gradient(top, $to , $from);
+  background: -o-linear-gradient(top, $to, $from);
+  background: -moz-linear-gradient(top, $to, $from);
+  background: linear-gradient(top, $to , $from);
+}
+
+
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin minWidth {
+  min-width: 1200px;
+}
+
+@mixin minHeight {
+  min-height: 760px;
+}

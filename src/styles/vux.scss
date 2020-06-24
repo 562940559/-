@@ -1,0 +1,12 @@
+@import "variables";
+
+.weui-dialog {
+  padding: toRem(40) 0 0 0;
+  max-width: none !important;
+  width: toRem(680) !important;
+}
+
+// toast 提示框字体大小
+.weui-toast__content {
+  font-size: toRem(30);
+}
