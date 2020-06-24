@@ -16,7 +16,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "font-awesome": "^4.7.0",
-    "jquery": "^1.12.4",
+    "jquery": "^3.5.0",
     "js-md5": "^0.7.3",
     "mobile-detect": "^1.4.3",
     "moment": "^2.23.0",
